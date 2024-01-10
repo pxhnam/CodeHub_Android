@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_background"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/inputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/makeVnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:text="" />
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@color/grey_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thoát" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/success"
+            android:text="Xác nhận" />
+
+    </LinearLayout>
+</LinearLayout>

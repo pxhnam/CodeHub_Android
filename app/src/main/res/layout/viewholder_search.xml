@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cart_background"
+    android:elevation="2dp"
+    android:layout_margin="5dp"
+    android:weightSum="10">
+
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngôn ngữ: " />
+
+            <TextView
+                android:id="@+id/tv_Language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Giá: " />
+
+            <TextView
+                android:id="@+id/tv_Fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink"
+                app:layout_constraintStart_toEndOf="@+id/text_fee"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink"
+                app:layout_constraintStart_toEndOf="@+id/tv_Fee"
+                android:text=" xu" />
+
+            <TextView
+                android:id="@+id/btn_SeeDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lavender"
+                app:layout_constraintTop_toBottomOf="@+id/textCoin"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="Xem chi tiết"
+                android:drawableTint="@color/lavender"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/next" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>
